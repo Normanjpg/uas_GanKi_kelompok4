@@ -29,7 +29,10 @@ class _HUtamaState extends State<HUtama> {
       Icons.shop,
       size: 150,
     ),
-    HProfile(),
+    Icon(
+      Icons.person,
+      size: 150,
+    ),
   ];
 
   @override
