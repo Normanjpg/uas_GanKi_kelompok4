@@ -2,7 +2,10 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:uas_1/Screens/HLogin.dart';
 import 'package:uas_1/Screens/HUtama.dart';
+import 'package:uas_1/Screens/Hcoba.dart';
+import 'package:uas_1/Screens/auth_service.dart';
 
 class HAwal extends StatefulWidget {
   const HAwal({super.key});
@@ -73,13 +76,9 @@ class _HAwalState extends State<HAwal> {
                     SizedBox(
                       width: 200,
                       child: ElevatedButton.icon(
-                          onPressed: () async {
-                            final result = await Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => HUtama(),
-                                ));
-                            ;
+                          onPressed: () {
+                            AuthService().signInWithGoogle();
+
                             print('Masuk Login');
                           },
                           style: ButtonStyle(
