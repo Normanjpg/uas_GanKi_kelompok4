@@ -4,7 +4,8 @@ import 'package:uas_1/Screens/HLogin.dart';
 import 'package:uas_1/Screens/HUtama.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:uas_1/Screens/Hcoba.dart';
+import 'package:uas_1/Screens/HProfile.dart';
+import 'package:uas_1/Screens/Home_page.dart';
 
 class AuthService {
   // 1. handleAuthState()
@@ -18,7 +19,7 @@ class AuthService {
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (BuildContext context, snapshot) {
           if (snapshot.hasData) {
-            return CProfile();
+            return Homepage();
           } else {
             return const HAwal();
           }

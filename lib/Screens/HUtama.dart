@@ -12,11 +12,11 @@ class HUtama extends StatefulWidget {
 }
 
 class _HUtamaState extends State<HUtama> {
-  int _selectedIndex = 0;
+  int __selectedIndex = 0;
 
   void _onItemTapped(int index) {
     setState(() {
-      _selectedIndex = index;
+      __selectedIndex = index;
     });
   }
 
@@ -57,7 +57,7 @@ class _HUtamaState extends State<HUtama> {
           backgroundColor: Colors.lightGreen,
         ),
         body: Column(
-          children: [_pages.elementAt(_selectedIndex)],
+          children: [_pages.elementAt(__selectedIndex)],
         ),
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.shifting,
@@ -85,7 +85,7 @@ class _HUtamaState extends State<HUtama> {
               backgroundColor: Colors.green,
             ),
           ],
-          currentIndex: _selectedIndex,
+          currentIndex: __selectedIndex,
           onTap: _onItemTapped,
         ),
       ),

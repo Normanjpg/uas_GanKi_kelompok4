@@ -4,7 +4,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:uas_1/Screens/HLogin.dart';
 import 'package:uas_1/Screens/HUtama.dart';
-import 'package:uas_1/Screens/Hcoba.dart';
+import 'package:uas_1/Screens/HProfile.dart';
 import 'package:uas_1/Screens/auth_service.dart';
 
 class HAwal extends StatefulWidget {
